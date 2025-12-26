@@ -1,4 +1,5 @@
 import pygame
+from constants import LINE_WIDTH
 
 # Base class for game objects
 class CircleShape(pygame.sprite.Sprite):
@@ -13,7 +14,7 @@ class CircleShape(pygame.sprite.Sprite):
         self.velocity = pygame.Vector2(0, 0)
         self.radius = radius
 
-    def draw(self, screen):
+    def draw(self, screen, color):
         # must override
         pass
 
